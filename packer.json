@@ -7,12 +7,11 @@
         "source_ami_filter": {
           "filters": {
             "virtualization-type": "hvm",
-            "name": "*Windows_Server-2012*English-64Bit-Base*",
+            "name": "Windows_Server-2022-English-Full-Base-*",
             "root-device-type": "ebs"
           },
           "most_recent": true,
-          "owners": "amazon"
-        },
+          "owners": "amazon"        },
         "ami_name": "default-packer",
         "user_data_file": "./userdata.txt",
         "communicator": "winrm",
